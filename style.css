@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -218,8 +218,8 @@ a:hover {
     z-index: 1;
 }
 .keywords {
-    color:#cccccc;
-    font-size: 1px; 
+    color: #585858;
+    font-size: 0px; 
 }
 
 .navbar-brand {
@@ -681,7 +681,7 @@ h3 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #232323;
     padding: 40px 40px 40px 40px;
 }
 
@@ -711,13 +711,13 @@ h3 {
     color: #232323;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover, #btn-atomic-tangerine:hover {
     background: #c27956;
     color: #FFFFFF;
 }
 
 .ltc-white {
-    color: #2c2c2c;
+    color: #969696;
 }
 
 .ltc-white:hover {
@@ -738,19 +738,23 @@ h3 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
+    object-fit: cover;
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
+    object-fit: cover;
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
+    object-fit: cover;
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
+    object-fit: cover;
 }
 
 @media (max-width: 1024px) {
@@ -944,6 +948,22 @@ h3 {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+    .social {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+    .partener {
+        margin-left: 10px;
+    }
+    #img-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        align-self: center;
     }
 }
 
