@@ -227,7 +227,7 @@ a:hover {
 }
 
 .navbar-brand img {
-    width: 100%;
+    width: 200px;
     height: 40px;
     margin: 0 5px 0 0;
     display: inline;
@@ -756,9 +756,9 @@ h3 {
     background-image: url("../img/image-de-presentation.webp");
     object-fit: cover;
 }
-.img-responsive img {
-    width: 100%;
-    height: auto;
+.work-image img {
+    width: 600px;
+    height: 300px;
     object-fit: cover;
 }
 .logo-image img {

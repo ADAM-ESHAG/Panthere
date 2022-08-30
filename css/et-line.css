@@ -3,7 +3,7 @@
     font-weight: 400;
     font-style: normal;
     src: url(../fonts/et-line.ttf) format('truetype'), url(../fonts/et-line.svg#et-line) format('svg');
-    font-display: swap;
+    font-display: fallback;
 }
 
 .et-icon-adjustments,
