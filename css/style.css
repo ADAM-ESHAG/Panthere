@@ -226,7 +226,7 @@ a:hover {
     line-height: 44px;
 }
 
-.navbar-brand img {
+.navbar-header .navbar-brand img {
     width: 200px;
     height: 40px;
     margin: 0 5px 0 0;
@@ -235,10 +235,7 @@ a:hover {
 
 .navbar-brand img[src$=svg] {
     min-width: 100px;
-}
-
-.nav-center .navbar-brand img {
-    margin: 0;
+    min-height: 40px;
 }
 
 .navbar .nav {
