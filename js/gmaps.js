@@ -120,7 +120,7 @@ var arrayToLatLng = function(coords, useGeoJSON) {
 
 var getElementsByClassName = function (class_name, context) {
     var element,
-        _class = class_name.replace('.', '');
+        _class = class_name.replace(/'/g, "\\'");
 
     if ('jQuery' in this && context) {
         element = $("." + _class, context)[0];
@@ -2177,15 +2177,15 @@ GMaps.createPanorama = function(options) {
 };
 
 GMaps.prototype.on = function(event_name, handler) {
-  return GMaps.on(event_name, this, handler);
+  return GMaps.on(event_name);
 };
 
 GMaps.prototype.off = function(event_name) {
-  GMaps.off(event_name, this);
+  GMaps.off(event_name);
 };
 
 GMaps.prototype.once = function(event_name, handler) {
-  return GMaps.once(event_name, this, handler);
+  return GMaps.once(event_name);
 };
 
 GMaps.custom_events = ['marker_added', 'marker_removed', 'polyline_added', 'polyline_removed', 'polygon_added', 'polygon_removed', 'geolocated', 'geolocation_failed'];

@@ -43,7 +43,7 @@
           }).toArray()
         );
 
-        $(uniqueForms).on("submit", function (e) {
+        $(uniqueForms).bind("submit", function (e) {
           var $form = $(this);
           var warningsFound = 0;
           var $inputs = $form.find("input,textarea,select").not("[type=submit],[type=image]").filter(settings.options.filter);
@@ -408,7 +408,7 @@
               var errorsFound = [];
 
               $.each(validators, function (validatorType, validatorTypeArray) {
-                if (value && value.length || (params && params.includeEmpty) || (!!settings.validatorTypes[validatorType].blockSubmit && params && !!params.submitting)) {
+                if (value || value.length || (params && params.includeEmpty) || (!!settings.validatorTypes[validatorType].blockSubmit && params && !!params.submitting)) {
                   $.each(validatorTypeArray, function (i, validator) {
                     if (settings.validatorTypes[validatorType].validate($this, value, validator)) {
                       errorsFound.push(validator.message);
@@ -498,7 +498,7 @@
               }
             }
           );
-          $this.on("validationLostFocus.validation", function () {
+          $this.bind("validationLostFocus.validation", function () {
             $controlGroup.removeClass("success");
           });
         });
@@ -514,7 +514,7 @@
               $helpBlock = $controlGroup.find(".help-block").first();
 
             // remove our events
-            $this.on('.validation'); // events are namespaced.
+            $this.unbind('.validation'); // events are namespaced.
             // reset help text
             $helpBlock.html($helpBlock.data("original-contents"));
             // reset classes
