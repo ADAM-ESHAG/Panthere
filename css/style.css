@@ -24,7 +24,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+    background: #FFFFFF url("../img/pageload-spinner.gif") no-repeat center center;
     
 }
 
@@ -102,6 +102,9 @@ a:hover {
 
 .d-bloc {
     color: #000000;
+}
+.d-bloc a .icon-md {
+    color: rgba(255, 255, 255, .6);
 }
 
 .d-bloc button:hover {
@@ -642,6 +645,13 @@ h3 {
     text-transform: uppercase;
     font-weight: 700;
     color: #333333;
+}
+h4 {
+    font-size: 20px;
+    color: #000000;
+}
+.para p {
+    color: #585858;
 }
 
 .med-width-whitespace {
