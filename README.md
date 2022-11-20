@@ -1,5 +1,5 @@
 # Panthere
-La Panthere is an agence web design based on Lyon. The agence was on the right way, but lately we descouvred that 
+La Panthere is an agence web design based in Lyon. The agence was on the right way, but lately we descouvred that 
 the name of the company disappear only on the second page in search engines.
 
 # SEO
